@@ -1,0 +1,207 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.header_wrapper
+{
+    background-color: #262626;
+   
+    height: 100px;
+    margin: auto;
+    
+}
+.logo
+{
+    color: #f2f2f2;
+    font-size: 90;
+}
+.tagline
+{
+    font-size: 12;
+    color: #f2f2f2;
+    text-transform: lowercase;
+    padding-top: 65;
+    font-family: cursive;
+}
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+ul
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+li.a
+{
+background-image: url(img/arrow.gif);
+background-size:10%;
+background-repeat: no-repeat;
+background-position: 6 .4em;
+padding-left: 2em;
+line-height:30px;
+}
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 1170px;
+	margin: 5px auto;
+}
+header 
+{
+	height: 300px;
+	padding: 0 0 0 0;
+	background-image:url("img//header.jpg");
+	background-size:cover;
+
+}
+#menu
+{
+margin:0 0 5px 0;
+}
+#content {
+	width: 180px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 700px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 10px;
+	margin: 0px 5px 5px 5px;
+}
+.menu_text a
+{
+text-decoration:none;
+font-size:large;
+font-weight:bold;
+color:#ff0000;
+
+}
+.menu_details a
+{
+text-decoration:none;
+}
+.menu_details a:hover
+{
+text-decoration:underline;
+}
+#sidebar {
+	width: 200px;
+	padding: 5px 10px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}
+
+/* css to display link as button */
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+
+  padding: 5px 10px 5px 10px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+/* css for rupees symbol */
+.rupee
+{
+
+@font-face{font-family:‘WebRupee’;src:url(‘WebRupee.V2.0.eot’);src:local(‘WebRupee’), url(‘WebRupee.V2.0.ttf’)format(‘truetype’),url(‘WebRupee.V2.0.woff’)format(‘woff’),
+url(‘WebRupee.V2.0.svg’)format(‘svg’);font-weight:normal;font-style:normal;}
+.WebRupee{font-family:’WebRupee’;}
+html>body.WebRupee{margin-right:2px;}
+html>body.WebRupee{*margin-right:0;}
+}
